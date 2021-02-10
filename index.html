@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Here you can find Sally contact information">
+    <title>Sally contact</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonts -->
+
+</head>
+
+<body>
+    <div id="application-root"></div>
+    <!-- React -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js">
+    </script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+    </script>
+    <!-- Babel -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js">
+    </script>
+    <script type="text/babel">
+        const appRoot = document.querySelector('#application-root');
+         // App Component
+        function App(props){
+            return(
+                <div>
+            <header>
+                <h1>{props.student}</h1>
+                <div id="imageContainer"></div>
+                <div id="img">
+                    <img src="./images/header/sallyHeader.jpg" />
+                </div>
+            </header>
+            <main>
+                <section id="intro">
+                    <p>Hi I'm Sally I'm 25 and below this line you'll find more information about me.</p>
+                </section>
+                <br />
+                <section id="education">
+                    <p>I have studied at...</p>
+                    <div id="uniLocation">
+                        <ul id="uniLocationItem">
+                            <li>IES BEZMILIANA</li>
+                            <li>Minnesota University</li>
+                        </ul>
+                    </div>
+                </section>
+                <br />
+                <section id="works">
+                    <p>I have worked at...</p>
+                    <div id="works_list">
+                        <div id="workContainer">
+                            <ul id="worksItem">
+                                <li>Github as Engineer during 2018 and there I have to
+                                design interensting front-ends using React, Javascript and HTML.
+                                </li>
+                                <li>Jetbrains as Project manager during 2019 and I'm still working there. My work consist in
+                                design, deployment end to end full stack web applications.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <br />
+                <section id="Contact-section">
+                        <p>Where will you find me ?... </p>
+                        <div className="contactContainer">
+                            <div className="contactItem">
+                                <address id="Contact-info">
+                                    <p>My name is Sally</p>
+                                    <p>My email is: <a href="mailto://sally@IntenetExplorer.old">sally@IntenetExplorer.old</a></p>
+                                    <p>My phone number is: <a href="tel:+34100572415">+34 100 57 24 15</a></p>
+                                </address>
+                            </div>
+                            <div className="contactItem">
+                                <img src="./images/identity/sallyIdentity.jpg"/>
+                            </div>
+                        </div>
+                </section>
+            </main>
+            <footer id="footNote">
+                Sally &copy;copyright
+            </footer>
+            </div>
+            );
+        }
+        ReactDOM.render(<App student="Sally Williams"/>, appRoot);
+    </script>
+</body>
+</html>
