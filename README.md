@@ -1,2 +1,4 @@
 # sallyThinkful
-React application 
+Sally Thinkful Application 
+# WEB LINK:
+https://neshdev999.github.io/sallyThinkful/. 
